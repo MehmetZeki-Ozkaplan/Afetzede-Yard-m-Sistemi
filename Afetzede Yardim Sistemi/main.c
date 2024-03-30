@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include "afet_yardim_sistemi.h"
 
-//Proje "DEVC" editöründe anlaşılmadık sorunlar ile karşılaştığından dolayı diğer editörlerden (Online Compiler vs.) denenmiştir ve çalışmaktadır.
-
 int main()
 {
 //Kulanicidan alinacak verilerin değişken tanimini yap
