@@ -18,5 +18,5 @@ void yardim_talepleri_listele();
 void menu_goster();
 
 void hata_mesaji();
-//INC_220504031_MEHMETZEKIOZKAPLAN_ODEV1_AFET_YARDIM_SISTEMI_H
+
 #endif 
