@@ -122,3 +122,7 @@ Below is the menu and some operations that the program provides when executed:
 ## Contributing
 
 If you want to contribute, please create a pull request or open an issue. Any contributions and feedback are welcome.
+
+## License
+
+This project is licensed under the MIT License. For more information, see the LICENSE file.
