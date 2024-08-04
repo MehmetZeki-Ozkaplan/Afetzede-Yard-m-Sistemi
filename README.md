@@ -1,25 +1,124 @@
-# Disaster Aid System
-This program is a simple program that I wrote in the C programming language during the 2022-2023 1st year Computer Engineering Education period.
+# Disaster Relief System
 
-This program is used to access information about disaster victims and request assistance. The program allows users to add, update, delete, and list information about disaster victims. In addition, users can save requests for assistance and list registered requests.
+This project is written in the C programming language to manage information of individuals in need during disasters, including adding, updating, deleting, and managing help requests.
+
+## Contents
+- [Overview](#overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Functions](#functions)
+- [Sample Output](#sample-output)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Overview
+
+The project consists of three main source files:
+- `main.c`: Contains the user interface and the main program loop.
+- `afet_yardim_sistemi.h`: Contains the function declarations.
+- `afet_yardim_sistemi.c`: Contains the function implementations.
 
 ## Installation
 
-1. Clone this project.
+To run the project on your own computer, follow these steps:
 
-2. GCC or a similar C compiler is required. You can install the GCC-loaded Environment from the [GCC download page](https://gcc.gnu.org/install/).
+1. Download or clone the project files:
+    
+       git clone https://github.com/username/project-name.git
 
-3. Open the terminals in the main directory of the project and run the command `gcc main.c -o afet_yardim_sistemi` and compile the program. 4. Develop the program using `./afet_yardim_sistemi`.
+       cd project-name
+
+3. Compile the project:
+    
+       gcc -o disaster_relief_system main.c afet_yardim_sistemi.c
 
 ## Usage
 
-- When the program starts, the user is presented with a menu. User can add, update, delete, list disaster victims and register requests for assistance for disaster victims.
-- User gets every deadline and can get it at any time in the program.
+After compiling, run the program with the following command:
 
-## Contribute
+    ./disaster_relief_system
 
-- If you want to contribute, please open a request. Consider opening a topic to discuss your problem before making major changes.
+When the program runs, the user can perform the following operations:
 
-## License
+  Add a disaster victim
+  Update a disaster victim's information
+  Delete a disaster victim
+  Search for a disaster victim
+  Record a help request
+  List disaster victims
+  List help requests
 
-This project is licensed under the MIT license. Learn more about `LICENSE`.
+The user selects the desired operation from the menu and enters the necessary information.
+
+## Functions
+afet_yardim_sistemi.h
+
+  void afetzede_ekle(char *ad, char *soyad, char *telefon, char *adres);
+  void afetzede_guncelle(int id, char *ad, char *soyad, char *telefon, char *adres);
+  void afetzede_sil(int id);
+  void afetzede_ara(int id);
+  void afetzede_listele();
+  void yardim_talebi_kaydet(int id, char *aciklama);
+  void yardim_talepleri_listele();
+  void menu_goster();
+  void hata_mesaji();
+
+afet_yardim_sistemi.c
+
+This file contains the implementations of the above functions. The functions manage adding, updating, deleting, searching, and listing disaster victims and help requests.
+
+## Sample Output
+
+Below is the menu and some operations that the program provides when executed:
+
+    |------ AFET YARDIM SISTEMI ------|
+    |1. Afetzede Ekle                 |
+    |2. Afetzede Güncelle             |
+    |3. Afetzede Sil                  |
+    |4. Afetzede Ara                  |
+    |5. Yardım Talebi Kaydet          |
+    |6. Afetzede Listele              |
+    |7. Afetzede Arama                |
+    |8. Yardım Talepleri Listele      |
+    |----------------------------------|
+    Lütfen Yapmak İstediğiniz İşlemi Seçin : 1
+    Ad: Ahmet
+    Soyad: Yılmaz
+    Telefon: 5551234567
+    Adres: İstanbul
+    Afetzede başarıyla eklendi.
+
+    |------ AFET YARDIM SISTEMI ------|
+    |1. Afetzede Ekle                 |
+    |2. Afetzede Güncelle             |
+    |3. Afetzede Sil                  |
+    |4. Afetzede Ara                  |
+    |5. Yardım Talebi Kaydet          |
+    |6. Afetzede Listele              |
+    |7. Afetzede Arama                |
+    |8. Yardım Talepleri Listele      |
+    |----------------------------------|
+    Lütfen Yapmak İstediğiniz İşlemi Seçin : 6
+    Afetzede Listesi:
+    ID: 0
+    Ad: Ahmet
+    Soyad: Yılmaz
+    Telefon: 5551234567
+    Adres: İstanbul
+    -------------------
+
+    |------ AFET YARDIM SISTEMI ------|
+    |1. Afetzede Ekle                 |
+    |2. Afetzede Güncelle             |
+    |3. Afetzede Sil                  |
+    |4. Afetzede Ara                  |
+    |5. Yardım Talebi Kaydet          |
+    |6. Afetzede Listele              |
+    |7. Afetzede Arama                |
+    |8. Yardım Talepleri Listele      |
+    |----------------------------------|
+    Lütfen Yapmak İstediğiniz İşlemi Seçin : 0
+
+## Contributing
+
+If you want to contribute, please create a pull request or open an issue. Any contributions and feedback are welcome.
