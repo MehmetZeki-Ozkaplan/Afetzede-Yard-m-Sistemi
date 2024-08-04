@@ -24,19 +24,19 @@ To run the project on your own computer, follow these steps:
 
 1. Download or clone the project files:
     
-       git clone https://github.com/username/project-name.git
+       https://github.com/MehmetZekii/Afetzede-Yard-m-Sistemi
 
-       cd project-name
+       cd Afetzede-Yard-m-Sistemi
 
 3. Compile the project:
     
-       gcc -o disaster_relief_system main.c afet_yardim_sistemi.c
+       gcc -o afet_yardim_sistemi main.c afet_yardim_sistemi.c
 
 ## Usage
 
 After compiling, run the program with the following command:
 
-    ./disaster_relief_system
+    ./afet_yardim_sistemi
 
 When the program runs, the user can perform the following operations:
 
