@@ -24,7 +24,7 @@ To run the project on your own computer, follow these steps:
 
 1. Download or clone the project files:
     
-       https://github.com/MehmetZekii/Afetzede-Yard-m-Sistemi
+       https://github.com/MehmetZeki-Ozkaplan/Afetzede-Yard-m-Sistemi
 
        cd Afetzede-Yard-m-Sistemi
 
